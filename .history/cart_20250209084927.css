@@ -1,0 +1,21 @@
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead{
+    font-weight: 650;
+}
+
+#cart-container table thead td{
+    background-color: coral;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
+
+#cart-container table td{
+    border: 1px solid #b6b6b6;
+    text-align: center;
+}

@@ -1,0 +1,10 @@
+#blog-container .post:hover img{
+    transform: scale(1.3) rotate(-10deg);
+    opacity: 0.8;
+
+}
+
+#blog-container .post .blog-img{
+    overflow: hidden;
+    cursor: pointer;
+}

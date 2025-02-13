@@ -1,0 +1,32 @@
+.product img{
+    width: 100%;
+    height: auto;
+    box-sizing: auto;
+    object-fit: cover;
+}
+
+h2 {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: 80px;
+    border: 2px solid #000;
+    margin: 0;
+}
+
+
+#featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+    background-color: black;
+}
+
+#featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+    background-color: coral;
+    color: #fff;
+}
+
+.pagination a{
+    color: black;
+}
+

@@ -1,0 +1,16 @@
+#contact-details .details-side span{
+    color: #8d8d8d;
+    font-size: 15px;
+}
+
+#contact-details .details-side h2{
+    margin-top: 10px;
+    columns: black;
+    font-size: 14px;
+}
+
+#contact-details .details-side h3{
+    margin-top: 10px;
+    columns: black;
+    font-size: 17px;
+}

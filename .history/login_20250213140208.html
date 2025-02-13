@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiki.moto Login</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Kiki.moto</h1>
+      <h2>Log in</h2>
+      <p>Enter your email and we'll send you a login code</p>
+    </div>
+    <form action="send_code" method="POST">
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <button type="submit" class="btn">Continue</button>
+    </form>
+    <div class="form-footer">
+      <p>Privacy</p>
+    </div>
+  </div>
+</body>
+</html>

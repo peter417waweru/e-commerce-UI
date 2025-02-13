@@ -1,0 +1,10 @@
+.product img{
+    width: 100%;
+    height: auto;
+    box-sizing: auto;
+    object-fit: cover;
+}
+
+#featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+    background-color: black;
+}

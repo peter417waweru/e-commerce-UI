@@ -1,0 +1,43 @@
+#contact-details .details-side span{
+    color: #8d8d8d;
+    font-size: 15px;
+}
+
+#contact-details .details-side h2{
+    margin-top: 10px;
+    columns: black;
+    font-size: 16px;
+}
+
+#contact-details .details-side h3{
+    margin-top: 10px;
+    columns: black;
+    font-size: 17px;
+}
+
+#contact-details .details-side li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details-side li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details-side li p{
+    margin: 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+#contact-details .details-side li p:hover{
+    color: coral;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+}

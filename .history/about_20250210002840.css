@@ -1,0 +1,66 @@
+#page-header .about-header{
+    background-image: url("img/about/banner.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 2%;
+}
+
+#page-header .about-header h2,
+#page-header .about-header p{
+    color: #fff;
+}
+
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#newsletter .row{
+    background-image: url("img/banner/1.jpg");
+}
+
+#newsletter .row h4{
+    color: #fff;
+    font-weight: bold;
+}
+
+#newsletter .row p{
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+#newsletter .row p span{
+    color: coral;
+    font-weight: 250;
+}
+
+#newsletter .row p span:hover{
+    cursor: pointer;
+    color: #8d8d8d;
+}
+
+#newsletter .row button{
+    background-color: coral;
+}
+
+#newsletter .row button:hover{
+    background-color: #8d8d8d;
+
+}
+
+@media (max-width: 768px){
+    #newsletter .row{
+        margin: 0 auto 0 auto;
+        padding-bottom: 20px;
+    }
+}
