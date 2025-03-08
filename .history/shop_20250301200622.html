@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./shop.css">
+    </head>
+
+    <body>
+        <div class="top-nav w-100">
+          <div class="container d-flex justify-content-between pt-1">
+            <marquee class="marquee" loop="-1" scrollamount="5" width="100%">Order Online Or Call Us: +254 721 173332</marquee>
+            <ul class="top-nav-list d-flex list-unstyled mb-0">
+              <li class="mx-2"><a href="/about.html">About Us</a></li>
+              <li class="mx-2"><a href="#">FAQ</a></li>
+              <li class="mx-2"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+          <div class="container">
+            <a href="./index.html">
+              <img class="logo img-fluid" src="img/images/images/logo.png" alt="Logo" style="width: 120px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+              </ul>
+
+              <div class="d-flex gap-3">
+                <a class="text-dark" href="./login.html"><i class="fa-regular fa-user"></i></a>  
+                <i class="fa-solid fa-magnifying-glass"></i>          
+                <i class="fa-regular fa-heart"></i>        
+                <a class="text-dark me-3" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <section id="featured" class="my-3 py-3">
+          <div class="container">
+            <h2 class="fw-bold">Our Products</h2>
+            <hr class="mb-4">
+            <p>Here you can check out our new products with the most fair prices</p>
+            
+            <!-- Filter and Sort Controls -->
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <label for="categoryFilter" class="form-label">Filter by Category:</label>
+                <select id="categoryFilter" class="form-select">
+                  <option value="all">All</option>
+                  <option value="shoes">Shoes</option>
+                  <option value="bags">Bags</option>
+                  <option value="clothes">Clothes</option>
+                  <option value="watches">Watches</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="sortOptions" class="form-label">Sort by:</label>
+                <select id="sortOptions" class="form-select">
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating-desc">Rating: High to Low</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        <!--Products-->
+          <div class="row mx-auto container g-4" id="productList">
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="clothes" data-price="300.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/1.jpg" alt="Sports Boots"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">T-shirts</h5>
+              <h4 class="p-price">ksh300.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+  
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="bags" data-price="1000.00" data-rating="4">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/3.jpg" alt="Leather Bag"></a>
+              <div class="star" data-rating="4">
+                <span class="stars">★★★★☆</span>
+              </div>
+              <h5 class="p-name">Leather Bag</h5>
+              <h4 class="p-price">ksh1000.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="shoes" data-price="1150.00" data-rating="4">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/2.jpg" alt="Adidas Shoes"></a>
+              <div class="star" data-rating="4">
+                <span class="stars">★★★★☆</span>
+              </div>
+              <h5 class="p-name">Adidas Shoes</h5>
+              <h4 class="p-price">ksh1150.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="shoes" data-price="999.00" data-rating="3">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/4.jpg" alt="Party boot"></a>
+              <div class="star" data-rating="3">
+                <span class="stars">★★★☆☆</span>
+              </div>
+              <h5 class="p-name">Party Boots</h5>
+              <h4 class="p-price">ksh999.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="clothes" data-price="99.00" data-rating="1">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/5.jpg" alt="Party Hat"></a>
+              <div class="star" data-rating="1">
+                <span class="stars">★☆☆☆☆</span>
+              </div>
+              <h5 class="p-name">Party Hat</h5>
+              <h4 class="p-price">ksh99.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="clothes" data-price="1990.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/6.jpg" alt="Summer Coat"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">Summer Coat</h5>
+              <h4 class="p-price">ksh1990.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="shoes" data-price="1990.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/7.jpg" alt="Men Flats"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">Men Flats</h5>
+              <h4 class="p-price">ksh1990.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="clothes" data-price="1500.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/8.jpg" alt="Rain Jackets"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">Rain Coat</h5>
+              <h4 class="p-price">ksh1500.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="bags" data-price="390.00" data-rating="4">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/9.jpg" alt="Side Bag"></a>
+              <div class="star" data-rating="4">
+                <span class="stars">★★★★☆</span>
+              </div>
+              <h5 class="p-name">Side Bag</h5>
+              <h4 class="p-price">ksh390.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="watches" data-price="780.00" data-rating="3">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/10.jpg" alt="Quantic Watch"></a>
+              <div class="star" data-rating="3">
+                <span class="stars">★★★☆☆</span>
+              </div>
+              <h5 class="p-name">Quantic Watch</h5>
+              <h4 class="p-price">ksh780.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-6" data-category="clothes" data-price="800.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/11.jpg" alt="Akubra Hat"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">Akubra Hat</h5>
+              <h4 class="p-price">ksh800.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div><div class="product text-center col-lg-3 col-md-4 col-6" data-category="shoes" data-price="1200.00" data-rating="5">
+              <a href="sproduct.html"><img class="img-fluid mb-3" src="img/shop/12.jpg" alt="Brogue Shoes"></a>
+              <div class="star" data-rating="5">
+                <span class="stars">★★★★★</span>
+              </div>
+              <h5 class="p-name">Brogue Shoes</h5>
+              <h4 class="p-price">ksh1200.00</h4>
+              <a href="#" class="btn buy-btn">Buy Now</a>
+            </div>
+          </div>
+        
+          <div class="container mt-5">
+            <nav aria-label="Product pagination">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        
+
+        <!--        <section id="featured" class="my-3 py-3">
+            <div class="container">
+              <h2 class="fw-bold">Our Products</h2>
+              <hr class="mb-4">
+              <p>Here you can check out our new products with the most fair prices</p>
+            </div>
+
+            <div class="row mx-auto container">
+              <div onclick="window.location.href='sproduct.html' " class="product text-center col-lg-3 col-md-4 col-6">
+                <img class="img-fluid mb-3" src="img/shop/1.jpg" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Sports Boots</h5>
+                <h4 class="p-price">$94.00</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-6">
+                <img class="img-fluid mb-3" src="img/shop/2.jpg" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Party Boots</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-6">
+                <img class="img-fluid mb-3" src="img/shop/3.jpg" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Leather Bag</h5>
+                <h4 class="p-price">$105.00</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+              <div class="product text-center col-lg-3 col-md-4 col-6">
+                <img class="img-fluid mb-3" src="img/shop/4.jpg" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Aquila Topa</h5>
+                <h4 class="p-price">$14.00</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+            </div>
+            <div class="row mx-auto container">
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/5.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sports Boots</h5>
+                  <h4 class="p-price">$94.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/6.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Party Boots</h5>
+                  <h4 class="p-price">$24.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/7.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Leather Bag</h5>
+                  <h4 class="p-price">$105.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/8.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Aquila Topa</h5>
+                  <h4 class="p-price">$14.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="row mx-auto container">
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/9.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sports Boots</h5>
+                  <h4 class="p-price">$94.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/10.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Party Boots</h5>
+                  <h4 class="p-price">$24.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/11.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Leather Bag</h5>
+                  <h4 class="p-price">$105.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/12.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Aquila Topa</h5>
+                  <h4 class="p-price">$14.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="row mx-auto container">
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/13.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sports Boots</h5>
+                  <h4 class="p-price">$94.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/14.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Party Boots</h5>
+                  <h4 class="p-price">$24.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/15.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Leather Bag</h5>
+                  <h4 class="p-price">$105.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/16.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Aquila Topa</h5>
+                  <h4 class="p-price">$14.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+              </div>
+              <div class="row mx-auto container">
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/17.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sports Boots</h5>
+                  <h4 class="p-price">$94.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/18.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Party Boots</h5>
+                  <h4 class="p-price">$24.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/19.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Leather Bag</h5>
+                  <h4 class="p-price">$105.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center col-lg-3 col-md-4 col-6">
+                  <img class="img-fluid mb-3" src="img/shop/20.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Aquila Topa</h5>
+                  <h4 class="p-price">$14.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <nav aria-label="...">
+                    <ul class="pagination mt-5">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>--->
+
+
+ 
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <a href="./index.html">
+                  <img class="logo img-fluid" src="img/images/images/logo.png" alt="Logo" style="width: 120px;">
+                </a>
+                <p class="pt-3">This is the best e-commerce website in the world.
+                   We have the best products for you at the most fair prices ever!!.</p>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h4 class="pb-2">Featured</h4>
+                <ul class="text-uppercase list-unstyled">
+                  <li><a href="#">men</a></li>
+                  <li><a href="#">women</a></li>
+                  <li><a href="#">girls</a></li>
+                  <li><a href="#">new arrivals</a></li>
+                  <li><a href="#">shoes</a></li>
+                  <li><a href="#">clothes</a></li>
+                </ul>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h4 class="pb-2">Contact Us</h4>
+                <div>
+                  <h6 class="text-uppercase">Address</h6>
+                <p>891 LUTHULI STREET NAIROBI KENYA.</p>
+                </div>
+                <div>
+                  <h6 class="text-uppercase">Phone</h6>
+                <p>+254 722 123 456</p>
+                </div>
+                <div>
+                  <h6 class="text-uppercase">Email</h6>
+                <p>fastorderdelivery@gmail.com</p>
+                </div>
+              </div>
+              <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h4 class="pb-2">Instagram</h4>
+                <div class="row">
+                  <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+                  <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+                </div>
+              </div>
+            </div> 
+            <div class="copyright mt-5">
+              <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                  <img class="img-fluid" src="img/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                  <p>© 2025 e-commerce website. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="./script.js"></script>
+        
+    </body>
+
+</html>
