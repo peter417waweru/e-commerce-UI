@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product Details</title>
+        <title>Ecommerce Website1</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./sproduct.css">
+        <link rel="stylesheet" href="./cart.css">
     </head>
 
     <body>
@@ -22,27 +22,25 @@
         <div class="container d-flex justify-content-between pt-1">
           <marquee class="marquee" loop="-1" scrollamount="5" width="100%">Order Online Or Call Us: +254 721 173332</marquee>
           <ul class="top-nav-list d-flex list-unstyled mb-0">
-            <li class="mx-2"><a href="/about.html">About Us</a></li>
+            <li class="mx-2"><a href="/about.html">About</a></li>
             <li class="mx-2"><a href="#">FAQ</a></li>
             <li class="mx-2"><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-1">
         <div class="container">
           <a href="./index.html">
             <img class="logo img-fluid" src="img/images/images/logo.png" alt="Logo" style="width: 120px;">
           </a>
-
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+              <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
               <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
               <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
@@ -52,111 +50,88 @@
               <a class="text-dark" href="./login.html"><i class="fa-regular fa-user"></i></a>  
               <i class="fa-solid fa-magnifying-glass"></i>          
               <i class="fa-regular fa-heart"></i>        
-              <a class="text-dark me-3" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+              <a class="text-dark me-3 active" href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
           </div>
         </div>
       </nav>
 
-        <section class="container sproduct my-3 pt-3">
-            <div class="row mt-5">
-                <div class="col-lg-5 col-mid-12 col-12">
-                    <img class="img-fluid w-100  pb-1" src="img/shop/1.jpg" alt="" id="MainImg">
-
-                    <div class="small-img-group">
-                        <div class="small-img-col">
-                            <img src="img/shop/23.jpg" width="100%" class="small-img" alt="">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="img/shop/24.jpg" width="100%" class="small-img" alt="">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="img/shop/25.jpg" width="100%" class="small-img" alt="">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="img/shop/26.jpg" width="100%" class="small-img" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-mid-12 col-12" >
-                    <h6>Home / T-Shirt</h6>
-                    <h3 class="mb-4">Men's Fashion T Shirt</h3>
-                    <h2>ksh499.00</h2>
-                    <select class="my-3" name="" id="">
-                        <option>Select Size</option>
-                        <option>XXL</option>
-                        <option>XL</option>
-                        <option>Large</option>
-                        <option>Small</option>
-                    </select>
-                    <input type="number" value="1">
-                    <a href="./cart.html" class="btn buy-btn">Buy Now</a>
-                    <h4 class="mt-5 mb-5">Product Details</h4>
-                    <span>Outline the main product benefits and features in just a few sentences, focusing on the aspects that set your product apart,
-                         making it irresistible. You also want to include all the technical details and specifications that a potential customer will need to 
-                         see in order to make an informed purchase decision.</span>
-                </div>
-            </div>
+        <section id="cart-home" class="container pt-3 mt-3">
+            <h2 class="fw-bold text-center">Shopping Cart</h2>
+            <hr>
         </section>
 
-        <section id="featured" class="my-5 pb-5">
-            <div class="container text-center mt-5 py-5">
-              <h3>Related Products</h3>
-              <hr class="mx-auto">
-            </div>
-            <div class="row mx-auto container-fluid">
-              <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/1.jpg" alt="">
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+        <section id="cart-container" class="container my-5">
+            <table class="w-100">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/shoes/1.jpg" alt=""></td>
+                        <td><h5>Rubber Shoes</h5></td>
+                        <td><h5>ksh750.00</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>ksh1500.00</h5></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/shoes/2.jpg" alt=""></td>
+                        <td><h5>Hike Boots</h5></td>
+                        <td><h5>640.00</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>640.00</h5></td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fas fa-trash-alt"></i></a></td>
+                        <td><img src="img/clothes/product-4.jpg" alt=""></td>
+                        <td><h5>Adidas Hoodies</h5></td>
+                        <td><h5>ksh850.00</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>ksh1700.00</h5></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-bottom" class="container">
+            <div class="row">
+                <div class="coupon col-lg-6 col-md-6 col-12 mb-5">
+                    <div>
+                        <h5>COUPON</h5>
+                        <P>Enter your coupon if you have one.</P>
+                        <input type="text" placeholder="Coupon code">
+                        <button>APPLY COUPON</button>
+                    </div>
                 </div>
-                <h5 class="p-name">Sports Boots</h5>
-                <h4 class="p-price">ksh500.00</h4>
-                <button class="buy-btn">Buy Now</button>
-              </div>
-              <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/2.jpg" alt="">
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div class="total col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h5>CART TOTAL</h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <P>ksh3840.00</P>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Shipping</h6>
+                            <P>ksh160.00</P>
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <P>ksh4000.00</P>
+                        </div>
+                        <button class="ml-auto">PROCEED TO CHECKOUT</button>
+                       
+                    </div>
                 </div>
-                <h5 class="p-name">Party Boots</h5>
-                <h4 class="p-price">ksh750.00</h4>
-                <button class="buy-btn">Buy Now</button>
-              </div>
-              <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/3.jpg" alt="">
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <h5 class="p-name">Leather Bag</h5>
-                <h4 class="p-price">ksh1250.00</h4>
-                <button class="buy-btn">Buy Now</button>
-              </div>
-              <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="img/featured/4.jpg" alt="">
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <h5 class="p-name">Aquila Topa</h5>
-                <h4 class="p-price">ksh1050.00</h4>
-                <button class="buy-btn">Buy Now</button>
-              </div>
             </div>
         </section>
 
@@ -223,7 +198,6 @@
           </div>
         </footer>
 
-
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
             integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
             crossorigin="anonymous">
@@ -232,24 +206,7 @@
             integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
             crossorigin="anonymous">
         </script>
-
-        <script>
-            var MainImg = document.getElementById('MainImg');
-            var SmallImg = document.getElementsByClassName('small-img');
-
-            SmallImg[0].onclick = function(){
-                MainImg.src = SmallImg[0].src;
-            }
-            SmallImg[1].onclick = function(){
-                MainImg.src = SmallImg[1].src;
-            }
-            SmallImg[2].onclick = function(){
-                MainImg.src = SmallImg[2].src;
-            }
-            SmallImg[3].onclick = function(){
-                MainImg.src = SmallImg[3].src;
-            }
-        </script>
+        <script src="scripts.js"></script>
     </body>
 
 </html>
