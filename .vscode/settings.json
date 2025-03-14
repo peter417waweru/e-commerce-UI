@@ -1,10 +1,19 @@
 {
-    "cSpell.words": [
-        "Audemars",
-        "Ecommerce",
-        "shota",
-        "Sportwear",
-        "sproduct",
-        "Topa"
-    ]
+  "cSpell.words": [
+    "Audemars",
+    "Ecommerce",
+    "shota",
+    "Sportwear",
+    "sproduct",
+    "Topa"
+  ],
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }

@@ -28,5 +28,6 @@
 .buy-btn{
     background: #fb774b;
     opacity: 1;
+    color: #fff;
     transition: 0.3s all;
 }
